@@ -19,6 +19,31 @@
                 top: 0;
             }
             
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            /* link que ainda não foi visitado */
+            a:link {
+                color: whitesmoke;
+            }
+
+            /* link que foi visitado */
+            /*a:visited {
+                color: green;
+            }*/
+
+            /* mouse over */
+            a:hover {
+                color: #000000;
+            }
+
+            /* link selecionado */
+            a:active {
+                color: blue;
+            }
+
             .logo {
                 position: absolute;
                 width: 300px;
@@ -32,24 +57,38 @@
             /*definir as propriedades do menu*/
             
             nav {
+                display: flex;
                 position: absolute;
-                right: 30px;
+                right: 0px;
                 bottom: 0px;
+                background-color: #777;
+                border-radius: 50dvh 2dvh;
+                margin: 0.3em; 
             }
-            
+
+            nav ul{
+                display: flex;
+                justify-content: left;
+                    text-align: left;
+            }
+                       
             nav ul li {
                 float: left;
                 color: #fff;
                 width: auto;
-                margin: 0.8em;
+                margin: 0.3em;
                 font-size: 1.5em;
                 font-family: "Verdna";
                 list-style: none;
+                
+                
             }
             
             nav ul li a {
                 text-decoration: none;
                 color: #bbb;
+                margin-right: 4dvh;
+                
             }
             
             nav ul li a:hover {
@@ -57,12 +96,17 @@
             }
             
             #banner {
+                /*display: block;*/
                 width: 100%;
+                text-align: center;
             }
             
             #banner img {
-                width: 100%;
+                width: 90%;
+                height: 90%;
                 margin-bottom: 0;
+                border-radius: 25px;
+                
             }
             /*definir as propriedades dos pop-ups*/
             
@@ -133,25 +177,34 @@
             /*Destacando os links*/
             
             footer {
+                display:flex;
                 width: 100%;
                 height: 18%;
-                background-color: #b50909;
+                background-color: #212122;
                 color: #fff;
                 position: relative;
                 float: left;
-                font-family: 'Verdana';
+                font-family: 'Verdana';   
+                border-radius: 2dvh;
+                border-radius: 50dvh 50dvh 2dvh 2dvh;
+                align-items: center;
+                justify-content: center;
+                
             }
             
-            footer .footer-text {
+            .footer-text{
+                background-color: #0d0dcc;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-radius: 2dvh;
                 width: 30%;
                 margin: 1%;
-                position: relative;
-                float: left;
+                text-align: center;
             }
             
-            footer.footer-text a {
+            /*footer.footer-text a {
                 color: #fff;
-            }
+            }*/
             /*Definindo a cor de fundo das páginas sobre, contato e cliente*/
             
             .color-page {
@@ -326,3 +379,5 @@
             #txt-contato #conta-data h5 img {
                 width: 50px;
             }
+
+            
